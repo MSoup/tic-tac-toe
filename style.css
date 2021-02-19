@@ -1,0 +1,62 @@
+header {
+  text-align: center;
+}
+
+body {
+  overflow: hidden;
+}
+.cell:hover {
+  background-color: peachpuff;
+}
+
+.game-board {
+  display: flex;
+  flex-wrap: wrap;
+  width: 70%;
+  margin: 0px auto;
+}
+
+.game-board div {
+  border: solid;
+  flex: 1 0 auto;
+  height: auto;
+  flex-basis: 32%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+div.game-board {
+  max-width: 620px;
+  min-width: 370px;
+}
+.game-board div:before {
+  content: "";
+  display: block;
+  padding-top: 100%;
+}
+
+.scoreboard {
+  display: flex;
+  justify-content: space-around;
+}
+
+p {
+  font-size: 40px;
+}
+
+footer {
+  height: 44px;
+  width: 100%;
+  background-color: grey;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.message {
+  color: white;
+}
