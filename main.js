@@ -114,7 +114,6 @@ const controller = (() => {
   const cells = document.querySelector(".game-board");
   // buttons
   const resetButton = document.querySelector(".reset");
-  const undoButton = document.querySelector(".undo");
   const randMoveButton = document.querySelector(".randMove");
 
   handleReset = function () {
@@ -142,7 +141,6 @@ const controller = (() => {
     gameboard.placeRandMove(activePlayer);
     activePlayer = activePlayer === "X" ? "O" : "X";
     if (gameboard.isGameOver()) {
-      console.log("Game over");
       document.querySelector(".score1").textContent = P1.getScore();
       document.querySelector(".score2").textContent = P2.getScore();
 
