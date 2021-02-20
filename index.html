@@ -6,25 +6,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tic Tac Toe</title>
     <link rel="stylesheet" href="style.css" />
-    <!-- <link
-      href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+    <link
+      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
       rel="stylesheet"
-    /> -->
+    />
   </head>
   <body>
     <header>
-      <h1>Tic Tac Toe</h1>
+      <h1 class="text-7xl">Tic Tac Toe</h1>
       <div class="scoreboard">
-        <div class="p1">
+        <div class="p1 text-4xl">
           <h2>P1 Score</h2>
+          <p class="score1"></p>
         </div>
-        <div class="p2">
+        <div class="p2 text-4xl">
           <h2>P2 Score</h2>
+          <p class="score2"></p>
         </div>
       </div>
     </header>
 
     <div class="game-board"></div>
+    <div class="options">
+      <button
+        class="reset bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow"
+      >
+        Reset
+      </button>
+      <button
+        class="undo bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow"
+      >
+        Undo
+      </button>
+      <button
+        class="randMove bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow"
+      >
+        Random Move
+      </button>
+    </div>
     <footer>
       <p class="message"></p>
     </footer>
